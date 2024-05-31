@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './modulo.component.html',
   styleUrl: './modulo.component.css'
 })
-export class ModuloComponent {
+export default class ModuloComponent {
 
 }
