@@ -4,9 +4,14 @@ import path from 'path';
 export const routes: Routes = [
 
     {
-        path: 'dashboard',
-        loadComponent: () => import('./admin/dashboard/dashboard.component'),
+        path: 'layout',
+        loadComponent: () => import('./shared/components/layout/layout.component'),
         children: [
+            {
+                path: 'dashboard',
+                title: 'Dashboard',
+                loadComponent: () => import('./admin/dashboard/dashboard.component'),
+            },
             {
                 path: 'administrador',
                 title: 'Administrador',
@@ -57,7 +62,7 @@ export const routes: Routes = [
     }, 
     {
         path: '',
-        redirectTo: '/dashboard',
+        redirectTo: '/layout',
         pathMatch: 'full'
     }
 
