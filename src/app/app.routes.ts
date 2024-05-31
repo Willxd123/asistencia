@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import path from 'path';
 
+
 export const routes: Routes = [
 
     {
@@ -9,6 +10,7 @@ export const routes: Routes = [
         children: [
             {
                 path: 'dashboard',
+                /* icon: '', */
                 title: 'Dashboard',
                 loadComponent: () => import('./admin/dashboard/dashboard.component'),
             },
@@ -57,9 +59,9 @@ export const routes: Routes = [
                 redirectTo: 'dashboard',
                 pathMatch: 'full',
             },*/
-            
+
         ]
-    }, 
+    },
     {
         path: '',
         redirectTo: '/layout',

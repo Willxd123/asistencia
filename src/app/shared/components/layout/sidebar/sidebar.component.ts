@@ -10,11 +10,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-
+  icon = '';
   public menu = routes
     .map( route => route.children ?? [])
     .flat()
     .filter(route => route && route.path)
+    
     .filter(route => !route.path?.includes(':'))
 
   constructor(){

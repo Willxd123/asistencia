@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
   title = 'asistencia';
 
   ngOnInit(): void {
-    initFlowbite();
+    if (typeof document !== 'undefined') {
+      // Solo ejecuta el código si `document` está definido
+      initFlowbite();
+    }
   }
 }
