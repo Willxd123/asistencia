@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './nivel.component.html',
   styleUrl: './nivel.component.css'
 })
-export class NivelComponent {
+export default class NivelComponent {
 
 }

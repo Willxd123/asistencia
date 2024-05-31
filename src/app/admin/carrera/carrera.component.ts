@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './carrera.component.html',
   styleUrl: './carrera.component.css'
 })
-export class CarreraComponent {
+export default class CarreraComponent {
 
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './grupo.component.html',
   styleUrl: './grupo.component.css'
 })
-export class GrupoComponent {
+export default class GrupoComponent {
 
 }
