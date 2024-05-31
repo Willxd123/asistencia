@@ -7,7 +7,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterModule, SidebarComponent, NavegacionComponent, BreadcrumbComponent],
+  imports: [RouterModule, SidebarComponent, NavegacionComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })
